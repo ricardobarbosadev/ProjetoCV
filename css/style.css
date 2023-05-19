@@ -102,7 +102,7 @@ a.anchor {
 }
 
 #portfolio {
-  background-image: url(../images/carrousel_provisoria2.jpg);
+  background-image: url(../images/pexels-lukas-590016.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -110,11 +110,10 @@ a.anchor {
   color: #f5f5fa;
 }
 
-.carousel-container {
-  display: flex;
-  align-items: center;
-  width: 700px;
-  height: 300px;
+.carousel-content {
+  width: 600px;
+  height: 400px;
+  text-decoration-color: #1f1f31;
 }
 
 #portfolio h1 {
@@ -168,29 +167,54 @@ a.anchor {
 }
 
 #about {
-  background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/about.jpg);
-  background-position: center;
+  background-image: url(../images/sobre.jpg);
   background-size: cover;
-  height: 100%;
-  padding-bottom: 50px;
-  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: 0px;
+  padding-top: 0%;
+  padding-bottom: 0px;
+  color: #f5f5fa;
+}
+
+.card-content {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  margin-bottom: 0px;
+  padding-top: 5px;
+}
+
+.download {
+  padding-top: 8px;
 }
 
 #about h1 {
+  margin-bottom: 5px;
   font-size: 5em;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.5), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #about p {
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: justify;
 }
 
 #about img {
-  padding: 10px;
-  /*max-width: 180px;*/
+  width: 35%;
+  border-radius: 79% 21% 24% 76%/30% 47% 53% 70%;
 }
 
+@media (max-height: 495px) {
+  #about {
+    height: 100%;
+  }
+}
 #white-bg {
   /*background-color: rgba(0,0,0, 0.5);
   border-radius: 20px;
@@ -203,11 +227,14 @@ a.anchor {
 
 #contact {
   background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
-  background-position: center;
   background-size: cover;
-  height: 100%;
-  padding-bottom: 50px;
-  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: 0px;
+  padding-top: 0%;
+  padding-bottom: 0px;
+  color: #f5f5fa;
 }
 
 #contact h1 {
