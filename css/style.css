@@ -9,11 +9,13 @@
   height: 30px;
 }
 
-/*html, body{
+html, body {
   height: 100%;
-}*/
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
+  color: #8C6954;
 }
 
 a.anchor {
@@ -24,8 +26,8 @@ a.anchor {
 }
 
 .navigationBar {
-  background-color: #e1e1e5;
-  color: #1f1f29;
+  background-color: #40352C;
+  color: #D9A78B;
   margin-top: 5px;
 }
 
@@ -33,6 +35,7 @@ a.anchor {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
+  color: #D9A78B;
 }
 
 .navbar-brand {
@@ -43,12 +46,12 @@ a.anchor {
 }
 
 .navbar-brand a {
-  color: #1f1f31;
+  color: #D9A78B;
   text-decoration: none;
 }
 
 .navbar-brand a:hover {
-  color: #0f0c0c;
+  color: #8C6954;
   font-style: oblique;
 }
 
@@ -57,13 +60,25 @@ a.anchor {
   text-transform: capitalize;
 }
 
+.nav-link {
+  color: #D9A78B;
+}
+
+.nav-link a {
+  color: #D9A78B;
+}
+
 .navbar ul li:hover {
   border-radius: 10px;
-  background-color: #f5f5fa;
+  background-color: #8C6954;
 }
 
 .navbar-toggler {
-  color: #1f1f31;
+  color: #D9A78B;
+}
+
+.navbar-toggler-icon {
+  color: #D9A78B;
 }
 
 #splash {
@@ -75,9 +90,15 @@ a.anchor {
   margin-top: 0px;
   padding-top: 0%;
   padding-bottom: 0px;
-  color: #f5f5fa;
+  color: #8C6954;
   font-size: 3em;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.5), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+#splash p {
+  color: #D9A78B;
+}
+#splash p a {
+  color: #8C6954;
 }
 
 @media (max-height: 495px) {
@@ -98,7 +119,7 @@ a.anchor {
 }
 
 #splash a:hover {
-  color: #e7e7e7;
+  color: #D9A78B;
 }
 
 #portfolio {
@@ -107,7 +128,7 @@ a.anchor {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  color: #f5f5fa;
+  color: #8C6954;
 }
 
 .carousel-content {
@@ -175,7 +196,7 @@ a.anchor {
   margin-top: 0px;
   padding-top: 0%;
   padding-bottom: 0px;
-  color: #f5f5fa;
+  color: #8C6954;
 }
 
 .card-content {
@@ -188,7 +209,7 @@ a.anchor {
   border: 1px solid rgba(255, 255, 255, 0.34);
   padding-top: 2px;
   margin-bottom: 2px;
-  padding-top: 2px;
+  padding-top: 15px;
 }
 
 .download {
@@ -196,7 +217,7 @@ a.anchor {
 }
 
 #about h1 {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 5em;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.5), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
@@ -204,6 +225,7 @@ a.anchor {
 #about p {
   font-size: 1em;
   text-align: justify;
+  color: #D9A78B;
 }
 
 #about img {
@@ -216,16 +238,6 @@ a.anchor {
     height: 100%;
   }
 }
-#white-bg {
-  /*background-color: rgba(0,0,0, 0.5);
-  border-radius: 20px;
-  margin-right: 10px;*/
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 6% 2%;
-}
-
 #contact {
   background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
   background-size: cover;
@@ -235,7 +247,7 @@ a.anchor {
   margin-top: 0px;
   padding-top: 0%;
   padding-bottom: 0px;
-  color: #f5f5fa;
+  color: #8C6954;
 }
 
 #contact h1 {
@@ -249,26 +261,45 @@ a.anchor {
 
 #contact address {
   font-size: 1.5em;
-  color: #fff;
+  color: #D9A78B;
   font-weight: bold;
 }
 
 #contact .fa-stack {
-  color: #333;
+  color: #8C6954;
+}
+
+#contact .fa-stack-1x {
+  color: #D9A78B;
 }
 
 #contact .fa-stack:hover .fa-stack-1x {
-  color: #333;
+  color: #8C6954;
   transition: 0.5s;
 }
 
 #contact .fa-stack:hover .fa-stack-2x {
-  color: #fff;
+  color: #D9A78B;
   transition: 0.5s;
 }
 
 #contact a {
   text-decoration: none;
+}
+
+@media (max-height: 770px) {
+  .social-container {
+    display: grid;
+    grid-template-columns: 20%;
+  }
+}
+#footer {
+  background-color: #40352C;
+  color: #D9A78B;
+}
+
+#copyright {
+  background-color: #8C6954;
 }
 
 /*# sourceMappingURL=style.css.map */

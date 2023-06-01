@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    
 }
 
 .logo {
@@ -10,12 +11,13 @@
 
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script|Ubuntu|Roboto:400,700);
 
-/*html, body{
+html, body{
   height: 100%;
-}*/
+}
 
 body {
     font-family: "Ubuntu", sans-serif;
+    color: $main-text;
 }
 
 a.anchor {
@@ -26,16 +28,20 @@ a.anchor {
 }
 
 .navigationBar {
-    background-color: #e1e1e5;
-    color: #1f1f29;
+    background-color: $main-back;
+    color: $secundary-text;
     margin-top: 5px;
-
 }
+
+    
+
 
 .nav-links {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
+    color: $secundary-text;
+   
 
 }
 
@@ -52,31 +58,45 @@ a.anchor {
 }
 
 .navbar-brand a {
-    color: #1f1f31;
+    color: $secundary-text;
     text-decoration: none;
 }
 
 
 .navbar-brand a:hover {
-    color: #0f0c0c;
+    color: $main-text;
     font-style: oblique;
 }
 
 
 
 .navbar li {
-
+    
     font-weight: 120;
     text-transform: capitalize;
 }
 
+
+.nav-link{
+    color: $secundary-text;
+}
+
+.nav-link a{
+    color: $secundary-text;
+}
+
 .navbar ul li:hover {
     border-radius: 10px;
-    background-color: #f5f5fa;
+    background-color: $main-text;
 }
 
 .navbar-toggler {
-    color: #1f1f31;
+    
+    color: $secundary-text;
+}
+
+.navbar-toggler-icon{
+    color: $secundary-text;
 }
 
 
@@ -94,11 +114,18 @@ a.anchor {
     margin-top: 0px;
     padding-top: 0%;
     padding-bottom: 0px;
-    color: #f5f5fa;
+    color: $main-text;
     font-size: 3em;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
         0px 8px 13px rgba(0, 0, 0, 0.5),
         0px 18px 23px rgba(0, 0, 0, 0.1);
+        p{
+            color: $secundary-text;
+            a{
+                color: $main-text;
+                
+            }
+        }
 }
 
 @media (max-height: 495px) {
@@ -121,7 +148,7 @@ a.anchor {
 }
 
 #splash a:hover {
-    color: #e7e7e7;
+    color: $secundary-text;
 }
 
 #portfolio {
@@ -133,7 +160,7 @@ a.anchor {
     height: 100vh;
 
 
-    color: #f5f5fa;
+    color: $main-text;
 }
 
 .carousel-content {
@@ -219,7 +246,7 @@ a.anchor {
     padding-top: 0%;
     padding-bottom: 0px;
     
-    color: #f5f5fa;
+    color: $main-text;
 
 }
 
@@ -258,6 +285,7 @@ a.anchor {
 #about p {
     font-size: 1em;
     text-align: justify;
+    color: $secundary-text;
 }
 
 #about img {
@@ -275,15 +303,7 @@ a.anchor {
 
 
 
-#white-bg {
-    /*background-color: rgba(0,0,0, 0.5);
-  border-radius: 20px;
-  margin-right: 10px;*/
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 6% 2%;
-}
+
 
 #contact {
     background-image: url(https://raw.githubusercontent.com/hash004/freecodecamp/master/portfolioPage/images/contact.jpg);
@@ -295,7 +315,7 @@ a.anchor {
     padding-top: 0%;
     padding-bottom: 0px;
     
-    color: #f5f5fa;
+    color: $main-text;
 }
 
 #contact h1 {
@@ -313,21 +333,27 @@ a.anchor {
 
 #contact address {
     font-size: 1.5em;
-    color: #fff;
+    color: $secundary-text;
     font-weight: bold;
 }
 
 #contact .fa-stack {
-    color: #333;
+    color: $main-text;
 }
 
+#contact  .fa-stack-1x {
+    color: $secundary-text;
+
+}
+
+
 #contact .fa-stack:hover .fa-stack-1x {
-    color: #333;
+    color: $main-text;
     transition: 0.5s;
 }
 
 #contact .fa-stack:hover .fa-stack-2x {
-    color: #fff;
+    color: $secundary-text;
     transition: 0.5s;
 }
 
@@ -335,5 +361,22 @@ a.anchor {
     text-decoration: none;
 }
 
+@media (max-height: 770px){
+    .social-container{
+        display: grid;
+        grid-template-columns: 20%;
+    }
+}
+
+
+#footer{
+    background-color: $main-back;
+    color: $secundary-text;
+    
+}
+
+#copyright{
+    background-color: $main-text;
+}
 
 
